@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&family=Rubik:wght@600&display=swap');
+
+.navbar{
+    background-color: #110f0f;
+}
+
+.navbar-brand{
+    font-family: 'Rubik', sans-serif;
+}
+
+.containerUpload{
+    display: grid;
+    grid-gap: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.content{
+    font-family: 'Hind Siliguri', sans-serif;
+}
+
+.containerUpload label{
+    display: flex;
+    align-items: center;
+    color: setColor(primary, 0.5);
+    background: setColor(white);
+    transition: 4s ease;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .75em;
+    font-weight: normal;
+}
+
+.containerUpload input{
+    position: relative;
+    z-index: 1;
+    padding: 0 gap(m);
+    width: 100%;
+    height: 50px;
+    border: 1px solid #323262;
+    font-size: 1rem;
+    user-select: none;
+    font-weight: normal;
+}
+    .containerUpload input[type="file"]{
+        padding: 0 gap(m);
+    }
+        .containerUpload input[type="file"]::-webkit-file-upload-button{
+            visibility: hidden;
+            margin-left: 10px;
+            padding: 0;
+            height: 50px;
+            width: 0;
+        }
+
+        .containerUpload button{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 50px;
+            height: 50px;
+            line-height: 0;
+            user-select: none;
+            background-color: #323262;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+
+.button{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.button-error{
+    background-color: #ba1717;
+    color: white;
+}
+
+.button-error:hover,
+.button-error:focus,
+.button-error:focus{
+    background-color: #961212;
+    color: white;
+}
+
+.button-pass{
+    background-color: #40893d;
+    color: white;
+}
+
+.button-pass:hover,
+.button-pass:focus,
+.button-pass:focus{
+    background-color: #356533;
+    color: white;
+}
+
+.button-empty{
+    background-color: #474545;
+    color: white;
+}
+
+.button-empty:hover,
+.button-empty:focus,
+.button-empty:focus{
+    background-color: #646262;
+    color: white;
+}
+
+.btn{
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 1px;
+}
